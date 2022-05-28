@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <%- include('partials/head') %>
+
+<body>
+    Our services
+    <% if(serviceList.length>0){ %>
+        <% serviceList.map((services)=>{ %>
+
+            <li>
+                <%= services %>
+            </li>
+            <% })}else{%>
+                No Services Available
+                <%} %>
+</body>
+
+</html>
